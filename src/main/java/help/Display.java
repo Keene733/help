@@ -16,6 +16,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 //this is some code that i added later!
+
+//this is the other line!
 /**
  * Keene Cabahug - 2444791 CIT 4423 01 Nov 13, 2022 Windows 11 Home
  */
