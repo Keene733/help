@@ -17,7 +17,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
 /**
- * Keene Cabahug - 2444791 CIT 4423 01 Nov 13, 2022 Windows 11 Home
+ * Keene Cabahug - 2444791 CIT 4423 01 Nov 22, 2022 Windows 11 Home
  */
 
 public class Display extends JFrame implements ActionListener {
@@ -44,6 +44,7 @@ public class Display extends JFrame implements ActionListener {
 	JPanel panel;
 	Products info = new Products();
 	Double productTotal;
+	private JPanel lPanel = new JPanel();
 
 	// Sets up the dropdown menu and checkbox
 	private JCheckBox[] checkBoxes = new JCheckBox[10];
@@ -180,7 +181,11 @@ public class Display extends JFrame implements ActionListener {
 
 			}
 		}
-			panel.add(new Edit());
+		 	lPanel.setBounds(0, (int) (this.getHeight() * 0.85), this.getWidth(), (int) (this.getHeight() * 0.2));
+		 	new Edit().setBounds(250, 250, WIDTH, HEIGHT);
+		 	lPanel.setBackground(Color.BLACK);
+			lPanel.add(new Edit());
+			dis.add(lPanel);
 			dis.add(panel);
 			dis.setVisible(true);
 
